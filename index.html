@@ -179,7 +179,7 @@
 				</div>
 			</section>
 
-			<!-- Our team -->
+			<!-- Team -->
 			<section class="section page-team__section">
 				<div class="container">
 					<h2 class="section__title">Наша команда</h2>
@@ -464,79 +464,79 @@
 				</div>
 			</section>
 
-			<!-- Our clients -->
+			<!-- Clients -->
 			<section class="section">
 				<div class="container">
 					<h2 class="section__title">Постоянные клиенты</h2>
 					<ul class="clients-list">
-						<li class="clients-general">
+						<li class="clients-list__cell">
 							<a
-								class="clients-item"
+								class="clients-list__link"
 								href=""
 								target="_blank"
 								rel="nofollow noreferrer noopener"
 							>
-								<svg class="clients-icon" width="106" height="60">
+								<svg class="clients-list__icon" width="106" height="60">
 									<use href="./images/icons.svg#icon-Logocomp1"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="clients-general">
+						<li class="clients-list__cell">
 							<a
-								class="clients-item"
+								class="clients-list__link"
 								href=""
 								target="_blank"
 								rel="nofollow noreferrer noopener"
 							>
-								<svg class="clients-icon" width="106" height="60">
+								<svg class="clients-list__icon" width="106" height="60">
 									<use href="./images/icons.svg#icon-Logocomp2"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="clients-general">
+						<li class="clients-list__cell">
 							<a
-								class="clients-item"
+								class="clients-list__link"
 								href=""
 								target="_blank"
 								rel="nofollow noreferrer noopener"
 							>
-								<svg class="clients-icon" width="106" height="60">
+								<svg class="clients-list__icon" width="106" height="60">
 									<use href="./images/icons.svg#icon-Logocomp3"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="clients-general">
+						<li class="clients-list__cell">
 							<a
-								class="clients-item"
+								class="clients-list__link"
 								href=""
 								target="_blank"
 								rel="nofollow noreferrer noopener"
 							>
-								<svg class="clients-icon" width="106" height="60">
+								<svg class="clients-list__icon" width="106" height="60">
 									<use href="./images/icons.svg#icon-Logocomp4"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="clients-general">
+						<li class="clients-list__cell">
 							<a
-								class="clients-item"
+								class="clients-list__link"
 								href=""
 								target="_blank"
 								rel="nofollow noreferrer noopener"
 							>
-								<svg class="clients-icon" width="106" height="60">
+								<svg class="clients-list__icon" width="106" height="60">
 									<use href="./images/icons.svg#icon-Logocomp5"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="clients-general">
+						<li class="clients-list__cell">
 							<a
-								class="clients-item"
+								class="clients-list__link"
 								href=""
 								target="_blank"
 								rel="nofollow noreferrer noopener"
 							>
-								<svg class="clients-icon" width="106" height="60">
+								<svg class="clients-list__icon" width="106" height="60">
 									<use href="./images/icons.svg#icon-Logocomp6"></use>
 								</svg>
 							</a>
@@ -548,29 +548,31 @@
 
 		<!-- Footer, address -->
 		<footer class="footer">
-			<div class="container positioning">
-				<div class="footer-left-info">
-					<a href="./index.html" lang="en" class="logo">
+			<div class="container footer__container">
+				<div class="footer__left-info">
+					<a href="./index.html" lang="en" class="logo footer__logo">
 						Web<span class="logo__studio-inverse">Studio</span>
 					</a>
-					<address class="address">
-						<ul class="footer-main list">
-							<li class="address-city">г. Киев, пр-т Леси Украинки, 26</li>
-							<li class="address-city">
+					<address class="footer__address">
+						<ul class="footer__address-transcript list">
+							<li class="footer__address-line">
+								г. Киев, пр-т Леси Украинки, 26
+							</li>
+							<li class="footer__address-line">
 								<a href="mailto:info@devstudio.com" class="contact-data"
 									>info@devstudio.com
 								</a>
 							</li>
-							<li class="address-city">
-								<a href="tel:+380961111111" class="contact-data tel"
+							<li class="footer__address-line">
+								<a href="tel:+380961111111" class="contact-data"
 									>+38 096 111 11 11
 								</a>
 							</li>
 						</ul>
 					</address>
 				</div>
-				<div class="footer-center-info">
-					<h3 class="footer-invitation">Присоединяйтесь</h3>
+				<div class="footer__center-info">
+					<h3 class="footer__invitation">Присоединяйтесь</h3>
 					<ul class="social-icons">
 						<li class="social-icons__cell">
 							<a
@@ -625,75 +627,100 @@
 
 				<!-- Subscription button footer -->
 
-				<div class="footer-subscription">
-					<form class="footer-form">
-						<h3 class="footer-invitation">Подпишитесь на рассылку</h3>
-						<div class="subscription-form">
-							<input type="email" name="" placeholder="E-mail" />
+				<div class="footer__subscription">
+					<form>
+						<h3 class="footer__invitation">Подпишитесь на рассылку</h3>
+						<div class="footer__subscription-form">
+							<input
+								class="footer__subscription-input"
+								type="email"
+								name="user-email"
+								placeholder="E-mail"
+							/>
 
-							<button type="submit" class="submit-btn">
+							<button type="submit" class="button-background button-background--submit">
 								Подписаться
-								<div class="button-styles-icon">
-									<svg width="24" height="24">
-										<use href="./images/icons.svg#icon-send"></use>
-									</svg>
-								</div>
+
+								<svg class="button-background__icon" width="24" height="24">
+									<use href="./images/icons.svg#icon-send"></use>
+								</svg>
 							</button>
 						</div>
 					</form>
 				</div>
 			</div>
 		</footer>
+
 		<!-- Modal window -->
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button type="button" class="close-wrap" data-modal-close></button>
 
 				<!-- Modal forms -->
-				<form class="modal-form">
-					<h3 class="modal-header">Оставьте свои данные, мы вам перезвоним</h3>
+				<form class="modal__form">
+					<h3 class="modal__header">Оставьте свои данные, мы вам перезвоним</h3>
 
-					<div class="modal-form-item">
-						<label for="name" class="modal-form-label">Имя</label>
-						<input type="name" name="" id="name" class="modal-form-input" />
-						<svg width="12" height="12" class="input-icon">
+					<div class="modal__item">
+						<label for="name" class="modal__label">Имя</label>
+						<input
+							type="name"
+							name="user-name"
+							id="name"
+							class="modal__input"
+						/>
+						<svg width="12" height="12" class="modal__input-icon">
 							<use href="./images/icons.svg#icon-miniman"></use>
 						</svg>
 					</div>
 
-					<div class="modal-form-item">
-						<label for="tel" class="modal-form-label">Телефон</label>
-						<input type="tel" name="" id="tel" class="modal-form-input" />
-						<svg width="13" height="13" class="input-icon">
+					<div class="modal__item">
+						<label for="tel" class="modal__label">Телефон</label>
+						<input type="tel" name="user-phone" id="tel" class="modal__input" />
+						<svg width="13" height="13" class="modal__input-icon">
 							<use href="./images/icons.svg#icon-phone"></use>
 						</svg>
 					</div>
 
-					<div class="modal-form-item">
-						<label for="email" class="modal-form-label">Почта</label>
-						<input type="email" name="" id="email" class="modal-form-input" />
-						<svg width="15" height="12" class="input-icon">
+					<div class="modal__item">
+						<label for="email" class="modal__label">Почта</label>
+						<input
+							type="email"
+							name="user-email"
+							id="email"
+							class="modal__input"
+						/>
+						<svg width="15" height="12" class="modal__input-icon">
 							<use href="./images/icons.svg#icon-envelope-next"></use>
 						</svg>
 					</div>
 
-					<div class="modal-form-item">
-						<label for="comment" class="modal-form-label"> Комментарий </label>
+					<div class="modal__item">
+						<label for="comment" class="modal__label"> Комментарий </label>
 						<textarea
-							name="comment"
+							name="user-comment"
 							id="comment"
 							rows="2"
 							placeholder="Введите текст"
+							class="modal__item-textarea"
 						></textarea>
 					</div>
 
-					<label class="modal-form-label-check">
-						<input type="checkbox" name="checkbox" />
-						<span class="icon-checkbox"></span>Соглашаюсь с рассылкой и принимаю
-						<a href="#">Условия договора</a></label
+					<label class="modal__label-checkbox">
+						<input
+							type="checkbox"
+							name="checkbox"
+							class="modal__input-checkbox"
+						/>
+						<span class="modal__icon-checkbox"></span>Соглашаюсь с рассылкой и
+						принимаю <a href="#" class="modal__link">Условия договора</a></label
 					>
 
-					<button type="submit">Отправить</button>
+					<button
+						type="submit"
+						class="button-background button-background--centered"
+					>
+						Отправить
+					</button>
 				</form>
 			</div>
 		</div>
