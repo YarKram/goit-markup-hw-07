@@ -1,0 +1,36 @@
+/* contacts header */
+
+.contact {
+	display: flex;
+	margin-left: auto;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0px;
+	gap: 93px;
+}
+
+.contact__item {
+	padding-top: 32px;
+	padding-bottom: 32px;
+	display: inline-flex;
+	align-items: center;
+}
+/* mail and phone links */
+
+.contact__link {
+	color: var(--additional-text-color);
+	font-weight: var(--font-weight-employee-name);
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+
+	align-items: center;
+	display: flex;
+	transition: color 250ms var(--cubic-bezier);
+	gap: 10px;
+	text-decoration: none;
+}
+
+.contact__icon {
+	fill: currentColor;
+}
