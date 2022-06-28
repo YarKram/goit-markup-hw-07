@@ -18,15 +18,15 @@
 /* mail and phone links */
 
 .contact__link {
-	color: var(--additional-text-color);
-	font-weight: var(--font-weight-employee-name);
+	color: $additional-text-color;
+	font-weight: $font-weight-employee-name;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 
 	align-items: center;
 	display: flex;
-	transition: color 250ms var(--cubic-bezier);
+	transition: color 250ms $cubic-bezier;
 	gap: 10px;
 	text-decoration: none;
 }

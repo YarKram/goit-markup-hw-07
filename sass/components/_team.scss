@@ -1,7 +1,7 @@
 /* team */
 
 .team__section {
-	background-color: var(--accent-button-backgroung);
+	background-color: $accent-button-backgroung;
 }
 
 .team__grid {
@@ -12,13 +12,13 @@
 
 .team__profile {
 	gap: 30px;
-	border-color: var(--main-text-color);
+	border-color: $main-text-color;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 		0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 
 	flex-basis: calc(100% / 3 - 30px);
-	background-color: var(--accent-color-two);
+	background-color: $accent-color-two;
 }
 
 .team__wrap {
@@ -29,8 +29,8 @@
 
 .team__name,
 .team__description {
-	color: var(--main-text-color);
-	font-weight: var(--font-weight-employee-name);
+	color: $main-text-color;
+	font-weight: $font-weight-employee-name;
 	font-size: 16px;
 	line-height: 1.19;
 	letter-spacing: 0.03em;
@@ -42,7 +42,7 @@
 }
 
 .team__description {
-	color: var(--additional-text-color);
-	font-weight: var(--additional-font-weight);
+	color: $additional-text-color;
+	font-weight: $additional-font-weight;
 	margin-bottom: 16px;
 }

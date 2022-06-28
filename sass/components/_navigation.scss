@@ -24,16 +24,16 @@
 	padding-bottom: 32px;
 
 	list-style: none;
-	color: var(--main-text-color);
+	color: $main-text-color;
 	text-decoration: none;
-	font-weight: var(--font-weight-employee-name);
+	font-weight: $font-weight-employee-name;
 
 	position: relative;
-	transition: color 250ms var(--cubic-bezier);
+	transition: color 250ms $cubic-bezier;
 }
 
 .navigation__link--current {
-	color: var(--accent-color);
+	color: $accent-color;
 }
 
 .navigation__link--current::after {
@@ -52,5 +52,5 @@
 .navigation__link:focus,
 .contact__link:hover,
 .contact__link:focus {
-	color: var(--accent-color);
+	color: $accent-color;
 }

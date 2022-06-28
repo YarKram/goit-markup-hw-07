@@ -15,10 +15,10 @@
 	padding-bottom: 6px;
 	padding-right: 22px;
 
-	color: var(--main-text-color);
-	background-color: var(--accent-button-backgroung);
-	font-family: var(--main-font);
-	font-weight: var(--font-weight-employee-name);
+	color: $main-text-color;
+	background-color: $accent-button-backgroung;
+	font-family: $main-font;
+	font-weight: $font-weight-employee-name;
 	font-size: 16px;
 	line-height: 1.63;
 	letter-spacing: 0.03em;
@@ -30,14 +30,14 @@
 
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 		color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-		box-shadow 250ms var(--cubic-bezier);
+		box-shadow 250ms $cubic-bezier;
 }
 
 .filter__button:hover,
 .filter__button:focus {
-	color: var(--accent-color-two);
-	background-color: var(--accent-color);
-	font-family: var(--main-font);
+	color: $accent-color-two;
+	background-color: $accent-color;
+	font-family: $main-font;
 	font-size: 16px;
 	line-height: 1.63;
 	letter-spacing: 0.03em;

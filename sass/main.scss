@@ -1,28 +1,28 @@
 // fonts + normalizer
-@import url(https://fonts.googleapis.com);
-@import url(https://fonts.gstatic.com) crossorigin;
-@import url(https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css);
-@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap);
+@import "https://fonts.googleapis.com";
+@import "https://fonts.gstatic.com";
+@import "https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css";
+@import "https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap";
 
 // common styles
-@import url(./utils/_variables.scss);
-@import url(./components/_constants.scss);
-@import url(./components/_logo.scss);
-@import url(./components/_header.scss);
-@import url(./components/_navigation.scss);
-@import url(./components/_header-contacts.scss);
-@import url(./components/_footer.scss);
-// @import url(./components/_activities.scss);
+@import "./utils/_variables.scss";
+@import "./components/_constants.scss";
+@import "./components/_logo.scss";
+@import "./components/_header.scss";
+@import "./components/_navigation.scss";
+@import "./components/_header-contacts.scss";
+@import "./components/_footer.scss";
+@import "./components/_activities.scss";
 // main-page styles
-@import url(./components/_hero.scss);
-@import url(./components/_advantages.scss);
-@import url(./components/_activities.scss);
-@import url(./components/_team.scss);
-@import url(./components/_social-icons.scss);
-@import url(./components/_clients.scss);
+@import "./components/_hero.scss";
+@import "./components/_advantages.scss";
+@import "./components/_activities.scss";
+@import "./components/_team.scss";
+@import "./components/_social-icons.scss";
+@import "./components/_clients.scss";
 // portfolio styles
-@import url(./components/_filter-buttons.scss);
-@import url(./components/_product-card.scss);
-@import url(./components/_overlay.scss);
+@import "./components/_filter-buttons.scss";
+@import "./components/_product-card.scss";
+@import "./components/_overlay.scss";
 // modal window
-@import url(./components/_modal-window.scss);
+@import "./components/_modal-window.scss";

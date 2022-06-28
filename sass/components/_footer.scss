@@ -1,8 +1,8 @@
 /* footer main-page */
 /* footer left side */
 .footer {
-	background-color: var(--accent-backgroung);
-	font-style: var(--font-style);
+	background-color: $accent-backgroung;
+	font-style: $font-style;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	padding-left: 15px;
@@ -24,7 +24,7 @@
 }
 
 .footer__address {
-	font-style: var(--font-style);
+	font-style: $font-style;
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
@@ -35,7 +35,7 @@
 }
 
 .footer__address-line {
-	color: var(--accent-color-two);
+	color: $accent-color-two;
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
@@ -51,16 +51,16 @@
 
 .contact-data {
 	text-decoration: none;
-	color: var(--studio-style-color);
-	font: var(--main-font);
-	font-style: var(--font-style);
+	color: $studio-style-color;
+	font: $main-font;
+	font-style: $font-style;
 
 	display: inline-block;
 }
 
 .contact-data:focus,
 .contact-data:hover {
-	transition: color 250ms var(--accent-color);
+	transition: color 250ms $accent-color;
 }
 
 /* footer center */
@@ -71,9 +71,9 @@
 }
 
 .footer__invitation {
-	font-family: var(--main-font);
+	font-family: $main-font;
 	text-transform: uppercase;
-	color: var(--accent-color-two);
+	color: $accent-color-two;
 	margin-top: 0;
 	margin-bottom: 20px;
 
@@ -109,7 +109,7 @@
 	border-radius: 4px;
 	background-color: transparent;
 
-	color: var(--accent-color-two);
+	color: $accent-color-two;
 	outline: inherit;
 }
 

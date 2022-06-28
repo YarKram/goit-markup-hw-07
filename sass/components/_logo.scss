@@ -1,9 +1,9 @@
 /* logo */
 
 .logo {
-	font-weight: var(--font-weight-advantages);
-	color: var(--accent-color);
-	font-family: var(--additional-font);
+	font-weight: $font-weight-advantages;
+	color: $accent-color;
+	font-family: $additional-font;
 
 	font-size: 26px;
 	line-height: 1.19;
@@ -12,9 +12,9 @@
 }
 
 .logo__studio {
-	color: var(--main-text-color);
+	color: $main-text-color;
 }
 
 .logo__studio-inverse {
-	color: var(--accent-color-two);
+	color: $accent-color-two;
 }

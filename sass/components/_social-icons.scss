@@ -21,16 +21,16 @@
 	color: rgb(175, 177, 184);
 	background-color: transparent;
 
-	transition: background-color 250ms var(--cubic-bezier);
+	transition: background-color 250ms $cubic-bezier;
 }
 
 .social-icons__link:hover {
-	background-color: var(--accent-color);
-	color: var(--accent-color-two);
+	background-color: $accent-color;
+	color: $accent-color-two;
 }
 
 .social-icons__link--footer {
-	color: var(--accent-color-two);
+	color: $accent-color-two;
 	background-color: rgba(255, 255, 255, 0.1);
 }
 

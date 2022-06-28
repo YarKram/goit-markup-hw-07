@@ -1,7 +1,7 @@
 /* page header */
 
 .page-header {
-	background-color: var(--accent-color-two);
+	background-color: $accent-color-two;
 	border-bottom: 1px solid #ececec;
 }
 
@@ -33,16 +33,16 @@
 	padding-bottom: 32px;
 
 	list-style: none;
-	color: var(--main-text-color);
+	color: $main-text-color;
 	text-decoration: none;
-	font-weight: var(--font-weight-employee-name);
+	font-weight: $font-weight-employee-name;
 
 	position: relative;
-	transition: color 250ms var(--cubic-bezier);
+	transition: color 250ms $cubic-bezier;
 }
 
 .page-header__link.current {
-	color: var(--accent-color);
+	color: $accent-color;
 }
 
 .current::after {
@@ -63,5 +63,5 @@
 .page-header__mail:focus,
 .page-header__phone:hover,
 .page-header__phone:focus {
-	color: var(--accent-color);
+	color: $accent-color;
 }
