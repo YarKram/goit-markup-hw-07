@@ -5,10 +5,6 @@
 	overflow: hidden;
 }
 
-.product-card__link:hover .overlay__wrap {
-	transform: translateY(-100%);
-}
-
 .overlay__wrap {
 	content: "";
 	position: absolute;
@@ -33,6 +29,10 @@
 	color: #ffffff;
 
 	overflow: hidden;
+
+	.product-card__link:hover & {
+		transform: translateY(-100%);
+	}
 }
 
 .overlay__description {

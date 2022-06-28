@@ -27,10 +27,9 @@
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
-}
-
-.footer__address-transcript {
-	padding-left: 0;
+	&-transcript {
+		padding-left: 0;
+	}
 }
 
 .footer__address-line {
@@ -40,10 +39,9 @@
 	letter-spacing: 0.03em;
 
 	margin-bottom: 9px;
-}
-
-.footer__address-line:last-child {
-	margin-bottom: 0;
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 /* Footer contact data */
@@ -54,11 +52,10 @@
 	font-family: $main-font;
 
 	transition: color 250ms $cubic-bezier;
-}
-
-.contact-data:focus,
-.contact-data:hover {
-	color: $accent-color;
+	&:focus,
+	&:hover {
+		color: $accent-color;
+	}
 }
 
 /* footer center */

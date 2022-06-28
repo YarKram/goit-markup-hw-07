@@ -30,27 +30,25 @@
 
 	position: relative;
 	transition: color 250ms $cubic-bezier;
-}
 
-.navigation__link--current {
-	color: $accent-color;
-}
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
 
-.navigation__link--current::after {
-	content: "";
-	position: absolute;
-	display: block;
-	bottom: -1px;
-	width: 100%;
-	height: 4px;
+	&--current {
+		color: $accent-color;
 
-	background-color: #2196f3;
-	border-radius: 2px;
-}
+		&::after {
+			content: "";
+			position: absolute;
+			display: block;
+			bottom: -1px;
+			width: 100%;
+			height: 4px;
 
-.navigation__link:hover,
-.navigation__link:focus,
-.contact__link:hover,
-.contact__link:focus {
-	color: $accent-color;
+			background-color: #2196f3;
+			border-radius: 2px;
+		}
+	}
 }

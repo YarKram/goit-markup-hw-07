@@ -25,11 +25,10 @@
 	justify-content: center;
 	color: #afb1b8;
 	transition: color 250ms $cubic-bezier;
-}
-
-.clients-list__link:hover {
-	color: #2196f3;
-	border: 1px solid #2196f3;
+	&:hover {
+		color: #2196f3;
+		border: 1px solid #2196f3;
+	}
 }
 
 .clients-list__icon {

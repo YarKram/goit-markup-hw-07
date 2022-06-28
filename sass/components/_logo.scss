@@ -13,8 +13,8 @@
 
 .logo__studio {
 	color: $main-text-color;
-}
-
-.logo__studio-inverse {
-	color: $accent-color-two;
+	
+	&-inverse {
+		color: $accent-color-two;
+	}
 }

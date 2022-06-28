@@ -22,16 +22,16 @@
 	background-color: transparent;
 
 	transition: background-color 250ms $cubic-bezier;
-}
 
-.social-icons__link:hover {
-	background-color: $accent-color;
-	color: $accent-color-two;
-}
+	&:hover {
+		background-color: $accent-color;
+		color: $accent-color-two;
+	}
 
-.social-icons__link--footer {
-	color: $accent-color-two;
-	background-color: rgba(255, 255, 255, 0.1);
+	&--footer {
+		color: $accent-color-two;
+		background-color: rgba(255, 255, 255, 0.1);
+	}
 }
 
 .social-icons__vector {

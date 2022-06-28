@@ -29,6 +29,11 @@
 	transition: color 250ms $cubic-bezier;
 	gap: 10px;
 	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
 }
 
 .contact__icon {

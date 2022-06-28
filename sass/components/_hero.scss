@@ -21,10 +21,10 @@
 
 	max-width: 1600px;
 	align-items: center;
-}
 
-.hero__container {
-	text-align: center;
+	&__container {
+		text-align: center;
+	}
 }
 
 .hero__heading {
@@ -59,10 +59,10 @@
 
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 		color 250ms $cubic-bezier;
-}
 
-.button-background:hover,
-.button-background:focus {
-	color: $accent-color-two;
-	background-color: $button-background-color-hover;
+	&:hover,
+	&:focus {
+		color: $accent-color-two;
+		background-color: $button-background-color-hover;
+	}
 }
