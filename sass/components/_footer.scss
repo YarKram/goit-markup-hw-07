@@ -2,7 +2,7 @@
 /* footer left side */
 .footer {
 	background-color: $accent-backgroung;
-	font-style: $font-style;
+
 	padding-top: 60px;
 	padding-bottom: 60px;
 	padding-left: 15px;
@@ -24,7 +24,6 @@
 }
 
 .footer__address {
-	font-style: $font-style;
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
@@ -43,7 +42,7 @@
 	margin-bottom: 9px;
 }
 
-.list .footer__address-line:last-child {
+.footer__address-line:last-child {
 	margin-bottom: 0;
 }
 
@@ -52,15 +51,14 @@
 .contact-data {
 	text-decoration: none;
 	color: $studio-style-color;
-	font: $main-font;
-	font-style: $font-style;
+	font-family: $main-font;
 
-	display: inline-block;
+	transition: color 250ms $cubic-bezier;
 }
 
 .contact-data:focus,
 .contact-data:hover {
-	transition: color 250ms $accent-color;
+	color: $accent-color;
 }
 
 /* footer center */
@@ -113,8 +111,9 @@
 	outline: inherit;
 }
 
-.button-background--submit {
+.button-background.button-background--submit {
 	display: flex;
+	flex-wrap: nowrap;
 	align-items: center;
 	justify-content: center;
 
@@ -122,13 +121,10 @@
 
 	margin-left: 12px;
 
-	padding-top: 10px;
-	padding-bottom: 10px;
 	padding-left: 0;
 	padding-right: 0;
 }
 
 .button-background__icon {
-	display: flex;
 	margin-left: 10px;
 }
