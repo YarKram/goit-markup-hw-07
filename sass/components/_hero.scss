@@ -2,8 +2,7 @@
 /* hero */
 
 .hero {
-	margin-left: auto;
-	margin-right: auto;
+	@extend %marginAuto;
 	background-color: $accent-backgroung;
 
 	background-image: linear-gradient(
@@ -23,11 +22,13 @@
 	align-items: center;
 
 	&__container {
+		@extend %container;
 		text-align: center;
 	}
 }
 
 .hero__heading {
+	@extend %marginAuto;
 	color: $accent-color-two;
 	font-weight: $main-font-weight;
 	font-size: 44px;
@@ -38,8 +39,6 @@
 	width: 696px;
 	margin-top: 0;
 	margin-bottom: 30px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .button-background {

@@ -10,6 +10,7 @@
 }
 
 .footer__container {
+	@extend %container;
 	display: flex;
 }
 
@@ -28,6 +29,7 @@
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	&-transcript {
+		@extend %list;
 		padding-left: 0;
 	}
 }
@@ -109,11 +111,8 @@
 }
 
 .button-background.button-background--submit {
-	display: flex;
+	@include flexPositioning();
 	flex-wrap: nowrap;
-	align-items: center;
-	justify-content: center;
-
 	width: 200px;
 
 	margin-left: 12px;

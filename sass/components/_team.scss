@@ -5,6 +5,7 @@
 }
 
 .team__grid {
+	@extend %list;
 	display: flex;
 	gap: 30px;
 	padding-left: 0;

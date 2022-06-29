@@ -1,18 +1,17 @@
 /* social icons */
 
 .social-icons {
-	list-style: none;
+	@extend %list;
+
 	display: flex;
-	padding: 0;
-	margin: 0;
+
 	justify-content: center;
 	gap: 10px;
+	padding: 0;
 }
 
 .social-icons__link {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@include flexPositioning();
 	width: 44px;
 	height: 44px;
 
@@ -35,5 +34,5 @@
 }
 
 .social-icons__vector {
-	fill: currentColor;
+	@extend %currentColor;
 }

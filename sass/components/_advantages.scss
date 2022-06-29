@@ -1,6 +1,10 @@
 /* advantages */
+.advantages__section {
+	padding-bottom: 0;
+}
 
 .advantages__grid {
+	@extend %list;
 	display: flex;
 	flex-wrap: wrap;
 
@@ -20,9 +24,7 @@
 }
 
 .advantages__wrap {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@include flexPositioning();
 
 	margin-bottom: 30px;
 	height: 120px;

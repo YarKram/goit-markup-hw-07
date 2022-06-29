@@ -1,12 +1,11 @@
 /*  Clients */
 
 .clients-list {
-	list-style: none;
+	@extend %list;
+
+	padding-left: 0;
 	display: flex;
 	flex-wrap: wrap;
-
-	padding: 0;
-	margin: 0;
 
 	gap: 30px;
 	columns: 6;
@@ -17,12 +16,11 @@
 }
 
 .clients-list__link {
+	@include flexPositioning();
 	height: 92px;
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+
 	color: #afb1b8;
 	transition: color 250ms $cubic-bezier;
 	&:hover {
@@ -32,5 +30,5 @@
 }
 
 .clients-list__icon {
-	fill: currentColor;
+	@extend %currentColor;
 }

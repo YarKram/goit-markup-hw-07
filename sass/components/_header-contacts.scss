@@ -1,6 +1,7 @@
 /* contacts header */
 
 .contact {
+	@extend %list;
 	display: flex;
 	margin-left: auto;
 	padding-left: 0;
@@ -37,5 +38,5 @@
 }
 
 .contact__icon {
-	fill: currentColor;
+	@extend %currentColor;
 }

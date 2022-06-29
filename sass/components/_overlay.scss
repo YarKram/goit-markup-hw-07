@@ -6,11 +6,9 @@
 }
 
 .overlay__wrap {
+	@include flexPositioning();
 	content: "";
 	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 
 	padding-left: 24px;
 	padding-right: 24px;

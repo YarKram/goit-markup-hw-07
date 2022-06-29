@@ -2,6 +2,7 @@
 /* filter buttons */
 
 .filter {
+		@extend %list;
 	margin-bottom: 50px;
 	padding-left: 0;
 	display: flex;

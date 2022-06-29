@@ -1,7 +1,32 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css";
 @import 'https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap';
 /* root */
-/* html box */
+.button-background--centered, .modal__form, .hero__heading, .hero, .container, .hero__container, .footer__container, .header__container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal__input-icon, .clients-list__icon, .social-icons__vector, .contact__icon {
+  fill: currentColor;
+}
+
+.product-card, .filter, .clients-list, .social-icons, .team__grid, .advantages__grid, .footer__address-transcript, .contact, .navigation__buttons {
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.hero__container, .footer__container, .header__container {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -34,22 +59,9 @@ img {
 .container {
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-}
-
-.list {
-  list-style: none;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .section__title {
@@ -96,8 +108,6 @@ img {
 
 .navigation__buttons {
   gap: 50px;
-  margin-top: 0;
-  margin-bottom: 0;
   display: flex;
   padding-left: 0;
   margin-left: 93px;
@@ -165,10 +175,6 @@ img {
 }
 .contact__link:hover, .contact__link:focus {
   color: #2196f3;
-}
-
-.contact__icon {
-  fill: currentColor;
 }
 
 /* footer main-page */
@@ -272,9 +278,9 @@ img {
 
 .button-background.button-background--submit {
   display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
   width: 200px;
   margin-left: 12px;
   padding-left: 0;
@@ -286,16 +292,9 @@ img {
 }
 
 /* Activities */
-.activities__section {
-  padding-top: 0;
-}
-
 .activities__grid {
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
   margin-top: -30px;
   margin-left: -30px;
   padding: 0;
@@ -304,9 +303,9 @@ img {
 
 .activities__cell {
   margin: 0;
+  padding: 0;
   margin-left: 30px;
   margin-top: 30px;
-  padding: 0;
   flex-basis: calc(33.3333333333% - 30px);
   position: relative;
   bottom: 0;
@@ -314,12 +313,12 @@ img {
 
 .activities__description {
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 70px;
-  align-items: center;
-  justify-content: center;
   margin: 0;
   color: #ffffff;
   text-transform: uppercase;
@@ -333,8 +332,6 @@ img {
 /* main  */
 /* hero */
 .hero {
-  margin-left: auto;
-  margin-right: auto;
   background-color: #2f303a;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/command.jpg");
   background-repeat: no-repeat;
@@ -359,8 +356,6 @@ img {
   width: 696px;
   margin-top: 0;
   margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .button-background {
@@ -383,6 +378,10 @@ img {
 }
 
 /* advantages */
+.advantages__section {
+  padding-bottom: 0;
+}
+
 .advantages__grid {
   display: flex;
   flex-wrap: wrap;
@@ -430,16 +429,9 @@ img {
 }
 
 /* Activities */
-.activities__section {
-  padding-top: 0;
-}
-
 .activities__grid {
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
   margin-top: -30px;
   margin-left: -30px;
   padding: 0;
@@ -448,9 +440,9 @@ img {
 
 .activities__cell {
   margin: 0;
+  padding: 0;
   margin-left: 30px;
   margin-top: 30px;
-  padding: 0;
   flex-basis: calc(33.3333333333% - 30px);
   position: relative;
   bottom: 0;
@@ -458,12 +450,12 @@ img {
 
 .activities__description {
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 70px;
-  align-items: center;
-  justify-content: center;
   margin: 0;
   color: #ffffff;
   text-transform: uppercase;
@@ -520,18 +512,16 @@ img {
 
 /* social icons */
 .social-icons {
-  list-style: none;
   display: flex;
-  padding: 0;
-  margin: 0;
   justify-content: center;
   gap: 10px;
+  padding: 0;
 }
 
 .social-icons__link {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -548,17 +538,11 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-icons__vector {
-  fill: currentColor;
-}
-
 /*  Clients */
 .clients-list {
-  list-style: none;
+  padding-left: 0;
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
   gap: 30px;
   columns: 6;
 }
@@ -568,22 +552,18 @@ img {
 }
 
 .clients-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #afb1b8;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list__link:hover {
   color: #2196f3;
   border: 1px solid #2196f3;
-}
-
-.clients-list__icon {
-  fill: currentColor;
 }
 
 /* portfolio */
@@ -625,7 +605,6 @@ img {
 
 /* product cards */
 .product-card {
-  margin: 0;
   padding-left: 0;
   margin-top: -30px;
   margin-left: -30px;
@@ -681,11 +660,11 @@ img {
 }
 
 .overlay__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   content: "";
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding-left: 24px;
   padding-right: 24px;
   margin: 0;
@@ -760,11 +739,6 @@ img {
   background-image: url(/images/close-blue.svg);
 }
 
-.modal__form {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .modal__header {
   margin-top: 0;
   margin-bottom: 12px;
@@ -817,7 +791,6 @@ img {
   position: absolute;
   left: 15px;
   top: 55%;
-  fill: currentColor;
   transform: opacity;
 }
 .modal__item .modal__input:focus ~ .modal__input-icon {
@@ -892,6 +865,4 @@ img {
 
 .button-background--centered {
   display: block;
-  margin-right: auto;
-  margin-left: auto;
 }/*# sourceMappingURL=main.css.map */

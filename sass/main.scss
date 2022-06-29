@@ -3,6 +3,8 @@
 
 // common styles
 @import "./utils/_variables.scss";
+@import "./utils/mixins";
+@import "./utils/placeholders";
 @import "./components/_constants.scss";
 @import "./components/_logo.scss";
 @import "./components/_header.scss";
